@@ -13,15 +13,15 @@ De Leraar controleert deze keuze aan de hand van de originele bestanden.
 [voorbeeld link](https://yfademocv.netlify.app/#skills)
 
 ## design
-* -[ ] requirements
+* -[x] requirements
 * -[ ] stories
 
 ## inhoud en varianten
 * -[ ] menu
 * -[ ] ionicons?
 
-* -[ ] html basis template
-* -[ ] css basis template
+* -[x] html basis template
+* -[x] css basis template
 
 
 * -[ ] html flexbox variant
@@ -45,6 +45,6 @@ De Leraar controleert deze keuze aan de hand van de originele bestanden.
 * -[ ] mobiele layout
 
 ## deployment
-* -[ ] github
+* -[x] github
 * -[ ] netifly pushen
 * -[ ] inleveren: 8 juni
