@@ -1,4 +1,20 @@
+/** box fix **/
+/** box fix **/
+html {
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
 /** hoofd layout **/
+ul {
+	list-style: none;
+	padding-bottom: 1rem;
+}
+
 section {
 	background-color: #ffffff;
 }
@@ -9,7 +25,15 @@ h2 {
 	margin-left: 1rem;
 }
 
+h3 {
+	padding-left: 1rem;
+}
+
 section > p {
+	padding: 0 1rem;
+}
+
+[aria-label="Social en contact informatie"] > img {
 	padding: 1rem;
 }
 /** flex **/
@@ -49,6 +73,7 @@ section > p {
 	display: flex;
 	flex-direction: row;
 	padding-left: 1rem;
+	margin: 0;
 }
 
 [class="flex-split"] > p {
@@ -106,6 +131,7 @@ div[class="flex-split"] > p:first-child {
 	> [class="flex-kolom"]
 	> p:last-child {
 	margin: 0;
+	padding: 0;
 }
 
 [class="flex-kolom"] > h3 ~ p {
