@@ -16,16 +16,29 @@ De Leraar controleert deze keuze aan de hand van de originele bestanden.
 * -[x] requirements
 * -[ ] stories
 
-## inhoud en varianten
+## inhoud
 * -[ ] menu
-* -[ ] ionicons?
+* -[ ] icons
+* -[ ] Persoonlijke gegevens tonen
+* -[ ] CV tonen
+* -[ ] Social media informatie/mogelijkheden tonen
+* -[ ] Contact informatie/mogelijkheden tonen
+* -[ ] Informatie over de persoon tonen
+* -[ ] Werkervaring tonen
+* -[ ] Opleiding van de persoon tonen
+* -[ ] Overige taken van de persoon tonen
+* -[ ] Talen van de persoon tonen
+* -[ ] Skills van de persoon tonen
+* -[ ] Hobby’s van de persoon tonen
 
+
+## varianten
 * -[x] html basis template
 * -[x] css basis template
 
 
-* -[ ] html flexbox variant
-* -[ ] css flexbox variant
+* -[x] html flexbox variant
+* -[x] css flexbox variant
 
 
 * -[ ] html grid variant
