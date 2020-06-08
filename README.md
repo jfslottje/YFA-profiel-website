@@ -17,19 +17,19 @@ De Leraar controleert deze keuze aan de hand van de originele bestanden.
 * -[ ] stories
 
 ## inhoud
-* -[ ] menu
+* -[x] menu
 * -[ ] icons
-* -[ ] Persoonlijke gegevens tonen
-* -[ ] CV tonen
+* -[x] Persoonlijke gegevens tonen
+* -[x] CV tonen
 * -[ ] Social media informatie/mogelijkheden tonen
-* -[ ] Contact informatie/mogelijkheden tonen
-* -[ ] Informatie over de persoon tonen
-* -[ ] Werkervaring tonen
-* -[ ] Opleiding van de persoon tonen
-* -[ ] Overige taken van de persoon tonen
-* -[ ] Talen van de persoon tonen
-* -[ ] Skills van de persoon tonen
-* -[ ] Hobby’s van de persoon tonen
+* -[x] Contact informatie/mogelijkheden tonen
+* -[x] Informatie over de persoon tonen
+* -[x] Werkervaring tonen
+* -[x] Opleiding van de persoon tonen
+* -[x] Overige taken van de persoon tonen
+* -[x] Talen van de persoon tonen
+* -[x] Skills van de persoon tonen
+* -[x] Hobby’s van de persoon tonen
 
 
 ## varianten
