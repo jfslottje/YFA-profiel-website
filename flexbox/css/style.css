@@ -62,7 +62,7 @@ div[class="flex-split"] > p:first-child {
 	font-weight: bold;
 }
 
-.flex-ervaring {
+.ervaring {
 	width: auto;
 	display: flex;
 	flex-direction: row;
@@ -70,29 +70,29 @@ div[class="flex-split"] > p:first-child {
 	margin-left: 1rem;
 }
 
-[class="flex-ervaring"] > p {
+[class="ervaring"] > p {
 	margin: 0;
 	font-weight: bold;
 }
 
-.flex-ervaring-inhoud {
+.ervaring-inhoud {
 	height: auto;
 	display: flex;
 	flex-direction: column;
 	margin-left: 4rem;
 }
 
-[class="flex-ervaring-inhoud"] > p {
+[class="ervaring-inhoud"] > p {
 	padding-right: 2rem;
 }
 
-[class="flex-ervaring-inhoud"] > [class="flex-rij"] {
+[class="ervaring-inhoud"] > [class="flex-rij"] {
 	justify-content: space-between;
 	align-items: flex-start;
 }
 
-[class="flex-ervaring-inhoud"] > [class="flex-rij"] > img,
-[class="flex-ervaring-inhoud"]
+[class="ervaring-inhoud"] > [class="flex-rij"] > img,
+[class="ervaring-inhoud"]
 	> [class="flex-rij"]
 	> [class="flex-rij"]
 	> img
@@ -100,8 +100,8 @@ div[class="flex-split"] > p:first-child {
 	padding-right: 2rem;
 }
 
-[class="flex-ervaring-inhoud"] > [class="flex-rij"] > [class="flex-kolom"] > h3,
-[class="flex-ervaring-inhoud"]
+[class="ervaring-inhoud"] > [class="flex-rij"] > [class="flex-kolom"] > h3,
+[class="ervaring-inhoud"]
 	> [class="flex-rij"]
 	> [class="flex-kolom"]
 	> p:last-child {
@@ -162,11 +162,6 @@ img[aria-hidden="true"] {
 	margin-right: 5%;
 }
 
-h3 ~ img {
-	display: flex;
-	flex-direction: row-reverse;
-	align-content: flex-end;
-}
 /** links **/
 a {
 	color: #333;
