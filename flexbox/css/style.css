@@ -1,5 +1,4 @@
 /** box fix **/
-/** box fix **/
 html {
 	box-sizing: border-box;
 }
@@ -9,6 +8,28 @@ html {
 	box-sizing: inherit;
 }
 
+/** kleuren **/
+
+:root {
+	--site-achtergrond: #f3f3f3;
+	--sectie-achtergrond: #ffffff;
+	--border: #e6e6e6;
+	--link-achtergrond: #f5f5f5;
+	--link-tekst: #333;
+	--footer-tekst: #808080;
+	--yfa-blauw: #0e76a8;
+}
+/** lettertype's **/
+h1,
+h2,
+h3 {
+	font-family: "Raleway", sans-serif;
+}
+
+p {
+	font-family: "PT Sans", sans-serif;
+}
+
 /** hoofd layout **/
 ul {
 	list-style: none;
@@ -16,17 +37,24 @@ ul {
 }
 
 section {
-	background-color: #ffffff;
+	background-color: var(--sectie-achtergrond);
+	padding-right: 1rem;
+	padding-left: 1rem;
 }
 
 h2 {
-	border-bottom: 1px solid #e6e6e6;
+	border-bottom: 1px solid var(--border);
 	padding: 1rem 0;
 	margin-left: 1rem;
 }
 
 h3 {
 	padding-left: 1rem;
+}
+
+img {
+	height: auto;
+	width: 100%;
 }
 
 section > p {
@@ -38,7 +66,7 @@ a > h3 {
 }
 [aria-label="Social en contact informatie"] > img {
 	padding: 1rem;
-	border-bottom: 1px solid #e6e6e6;
+	border-bottom: 1px solid var(--border);
 }
 /** flex **/
 
@@ -66,10 +94,10 @@ a > h3 {
 	justify-content: left;
 	align-items: center;
 	flex: 0 1 0;
-	background-color: #f5f5f5;
+	background-color: var(--link-achtergrond);
 	margin: 1rem;
 	padding-left: 1rem;
-	color: #346abb;
+	color: var(--yfa-blauw);
 }
 
 .flex-split {
@@ -86,9 +114,10 @@ a > h3 {
 	width: 50%;
 }
 
-div[class="flex-split"] > p:first-child {
+[class="flex-split"] > p:first-child {
 	text-transform: uppercase;
 	font-weight: bold;
+	min-width: 8rem;
 }
 
 .ervaring {
@@ -146,15 +175,15 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: #f3f3f3;
+	background-color: var(--site-achtergrond);
 }
 
 footer {
 	display: flex;
 	width: 100%;
 	justify-content: center;
-	background-color: #333;
-	color: #808080;
+	background-color: var(--link-tekst);
+	color: var(--footer-tekst);
 	padding: 1rem;
 	margin-top: 0.5rem;
 }
@@ -175,7 +204,7 @@ nav > a {
 	padding: 1rem;
 	align-items: center;
 	justify-content: center;
-	background-color: #ffffff;
+	background-color: var(--sectie-achtergrond);
 	font-weight: bolder;
 }
 
@@ -194,7 +223,7 @@ img[aria-hidden="true"] {
 
 /** links **/
 a {
-	color: #333;
+	color: var(--link-tekst);
 	text-decoration: none;
 }
 
@@ -202,8 +231,8 @@ a:active,
 a:focus,
 a:hover,
 a:hover > h3 {
-	background-color: #346abb;
-	color: f5f5f5;
+	background-color: var(--yfa-blauw);
+	color: var(--link-achtergrond);
 }
 
 /**tabellen **/
@@ -223,7 +252,7 @@ tr {
 	padding: 0.5rem;
 	line-height: 1rem;
 	vertical-align: top;
-	border-top: 1px solid #ddd;
+	border-top: 1px solid var(--border);
 }
 
 tr {
@@ -232,5 +261,5 @@ tr {
 }
 
 tbody > tr:nth-child(odd) {
-	background-color: #f9f9f9;
+	background-color: var(--site-achtergrond);
 }
