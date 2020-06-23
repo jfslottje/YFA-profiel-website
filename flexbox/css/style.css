@@ -26,9 +26,71 @@ h3 {
   font-family: "Raleway", sans-serif;
 }
 
-p {
+body {
   font-family: "PT Sans", sans-serif;
+  font-size: 1rem;
   color: var(--tekst);
+}
+
+/** menu **/
+.menu-knop {
+  display: none;
+  padding: 1rem;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--sectie-achtergrond);
+  font-weight: bolder;
+}
+
+.menu-item {
+  display: flex;
+  flex: 1 0 10%;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--sectie-achtergrond);
+  font-weight: bolder;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+img[aria-hidden="true"] {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 5%;
+}
+
+/** links **/
+a {
+  color: var(--tekst);
+  text-decoration: none;
+}
+
+a:active,
+a:focus,
+a:hover,
+a:hover > h3 {
+  background-color: var(--yfa-blauw);
+  color: var(--link-achtergrond);
+}
+[aria-hidden="true"] ~ p {
+  color: var(--yfa-blauw);
+}
+
+.social > a > img:hover,
+.social > a > img:active {
+  filter: invert(0.4);
+}
+
+.social > a:hover,
+.social > a:active {
+  background-color: ffffff;
 }
 
 /** hoofd layout **/
@@ -68,6 +130,11 @@ a > h3 {
   border-top: 1px solid var(--border);
 }
 
+/** Curriculum-Vitae **/
+.flex-rij > a:hover{
+  background-color: var(--link-achtergrond);
+}
+/**social**/
 .social {
   display: flex;
   justify-content: space-evenly;
@@ -167,7 +234,7 @@ a > h3 {
   align-items: flex-start;
 }
 
-[class="ervaring-inhoud"] > [class="flex-rij"] > img,
+
 [class="ervaring-inhoud"]
   > [class="flex-rij"]
   > [class="flex-rij"]
@@ -219,65 +286,8 @@ aside {
   margin-right: 1rem;
 }
 
-/** menu **/
-.menu-knop {
-  display: none;
-  padding: 1rem;
-  align-items: center;
-  justify-content: flex-start;
-  background-color: var(--sectie-achtergrond);
-  font-weight: bolder;
-}
 
-.menu-item {
-  display: flex;
-  flex: 1 0 10%;
-  padding: 1rem;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--sectie-achtergrond);
-  font-weight: bolder;
-}
 
-nav {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  padding-bottom: 0;
-}
-
-img[aria-hidden="true"] {
-  width: 1.2rem;
-  height: 1.2rem;
-  margin-right: 5%;
-}
-
-/** links **/
-a {
-  color: var(--tekst);
-  text-decoration: none;
-}
-
-a:active,
-a:focus,
-a:hover,
-a:hover > h3 {
-  background-color: var(--yfa-blauw);
-  color: var(--link-achtergrond);
-}
-[aria-hidden="true"] ~ p {
-  color: var(--yfa-blauw);
-}
-
-.social > a > img:hover,
-.social > a > img:active {
-  filter: invert(0.4);
-}
-
-.social > a:hover,
-.social > a:active {
-  background-color: ffffff;
-}
 /**tabellen **/
 .tabel-fix {
   border-bottom: none;
@@ -312,9 +322,21 @@ tbody > tr:nth-child(odd) {
 /** smartphone **/
 @media screen and (min-width: 320px) and (max-width: 600px) {
   body {
-    background-color: chartreuse;
+    font-size: 0.8rem;
   }
 
+  h1 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  h2{
+    font-size: 1rem;
+    margin-left: 0;
+
+  }
+  h3 {
+    font-size: 0.9rem;
+  }
   .flex-container,
   .flex-split > p {
     width: 100%;
@@ -354,15 +376,9 @@ tbody > tr:nth-child(odd) {
     font-size: 0.7rem;
   }
 
-  h2 {
-    margin-left: 0;
-  }
-  h1 {
-    margin: auto;
-  }
-
   .menu-knop {
     display: flex;
+    
   }
   .menu-item {
     display: none;
@@ -390,25 +406,34 @@ tbody > tr:nth-child(odd) {
   }
 }
 
-/** desktop klein**/
-@media screen and (min-width: 901px) and (max-width: 1410px) {
-  body {
-    background-color: teal;
-    justify-content: left;
+@media print  {
+  body{
+    visibility: hidden;
+    width: 21cm;
+    height: 29.7cm;
+    margin: 30mm 45mm 30mm 45mm;
+ }
+html{
+  color: var(--sectie-achtergrond);
+}
+  .print{
+    visibility: visible;
   }
-  .flex-container {
-    width: 95%;
-    padding: 0 0.3rem;
+  [aria-label="Persoonlijke gegevens"] > img{
+   width: 100%;
+  }
+  section, aside, main{
+    margin: auto;
+    padding: 0;
+    
   }
 
-  [class="ervaring-inhoud"] > [class="flex-rij"] > img {
-    padding-right: 0;
-    padding-left: 0.5rem;
+  .flex-container{
+    width: 100%;
   }
-  .menu-knop {
-    display: none;
+  
+  .flex-rij {
+    flex-direction: column;
   }
-  .menu-item {
-    display: flex;
-  }
+
 }

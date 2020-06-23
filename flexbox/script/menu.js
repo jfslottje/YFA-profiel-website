@@ -6,9 +6,9 @@ let breedte = 600;
 /*
  *event listeners
  */
-/* let op een resize van de gehele pagina.*/
+/* controleerd op een resize van de gehele pagina.*/
 window.addEventListener("resize", Reset);
-/* let op of er op een menu knop geklikt is.*/
+/* controleerd of er op een menu knop geklikt is.*/
 menu_knop.addEventListener("click", Toggle);
 menu_items.forEach(function(element) {
   element.addEventListener("click", Toggle);
@@ -18,7 +18,7 @@ menu_items.forEach(function(element) {
  * De functie toggle veranderd de display style voor de menu items zodat het menu verborgen kan worden achter één menu knop.
  */
 function Toggle() {
-  console.log("breedte " + window.innerWidth);
+  
   /* controleer of de pagina klein genoeg is voor de menuknop.*/
   if (window.innerWidth < breedte) {
     if (menu_knop.style.display !== "none") {

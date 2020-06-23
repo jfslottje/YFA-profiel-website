@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="nl">
 	<head>
 		<meta http-equiv="content-type" content="text/html" ; charset="UTF-8" />
@@ -21,7 +22,7 @@
 							src="./images/icons/menu.svg"
 							alt="menu knop"
 							aria-hidden="true"
-						/>menu knop</a
+						/></a
 					>
 
 					<a class="menu-item" href="#about-me"
@@ -84,7 +85,7 @@
 			<div class="flex-rij">
 				<aside>
 					<!-- Persoonlijke gegevens -->
-					<section aria-label="Persoonlijke gegevens">
+					<section class="print" aria-label="Persoonlijke gegevens">
 						<h2>PERSOONLIJKE GEGEVENS</h2>
 						<img src="./images/avatar.jpg" alt="avatar" title="avatar" />
 
@@ -115,11 +116,11 @@
 						</div>
 						<div class="flex-split">
 							<p>Email</p>
-							<p>voorbeeld@voorbeeld.nl</p>
+							<a href="mailto:voorbeeld@voorbeeld">	<p>voorbeeld@voorbeeld.nl</p></a>
 						</div>
 						<div class="flex-split">
 							<p>Website</p>
-							<p>voorbeeld.nl</p>
+							<a href="https://voorbeeld.nl"><p>voorbeeld.nl</p></a>
 						</div>
 						<div class="flex-split">
 							<p>Geboortedatum</p>
@@ -156,21 +157,7 @@
 								</div>
 							</div>
 							<div class="flex-link">
-								<img src="./images/icons/word-icon.jpg" aria-hidden="true" />
-								<p>COE.docx</p>
-								<div class="flex-rij">
-									<a
-										><img
-											src="./images/icons/eye-outline.svg"
-											aria-hidden="true"
-									/></a>
-									<a
-										><img
-											src="./images/icons/cloud-download-sharp.svg"
-											aria-hidden="true"
-										/>
-									</a>
-								</div>
+								<p onclick="window.print()">Print pagina</p>
 							</div>
 						</div>
 					</section>
@@ -206,7 +193,7 @@
 				</aside>
 				<main>
 					<!-- Persoonlijke informatie -->
-					<section id="about-me" aria-label="Persoonlijke informatie">
+					<section id="about-me" class="print" aria-label="Persoonlijke informatie">
 						<h2>OVER MIJ</h2>
 						<div class="flex-rij">
 							<div class="flex-kolom" style="width: 50%;">
@@ -258,7 +245,7 @@
 						</p>
 					</section>
 					<!-- Werkervaring -->
-					<section id="werk-ervaring" aria-label="Werkervaring">
+					<section id="werk-ervaring" class="print" aria-label="Werkervaring">
 						<h2>WERKERVARING</h2>
 						<!-- item 1-->
 						<div class="ervaring">
@@ -272,13 +259,7 @@
 											San Francisco, California, USA
 										</p>
 									</div>
-									<img
-										src="./images/company-logo-1.jpg"
-										alt="bedrijfslogo"
-										title="bedrijfslogo"
-										width="161"
-										height="52"
-									/>
+									
 								</div>
 
 								<p>
@@ -300,13 +281,7 @@
 										<p>Market Network</p>
 										<p>San Francisco, California, USA</p>
 									</div>
-									<img
-										src="./images/company-logo-1.jpg"
-										alt="bedrijfslogo"
-										title="bedrijfslogo"
-										width="161"
-										height="52"
-									/>
+									
 								</div>
 								<p>
 									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
@@ -318,7 +293,7 @@
 						</div>
 					</section>
 					<!-- Opleiding -->
-					<section id="opleiding" aria-label="Opleiding">
+					<section id="opleiding" class="print" aria-label="Opleiding">
 						<h2>OPLEIDINGEN EN CURSUSSEN</h2>
 
 						<!-- item 1-->
@@ -378,7 +353,7 @@
 						</div>
 					</section>
 					<!-- Overige taken-->
-					<section id="overige" aria-label="Overige taken">
+					<section id="overige" class="print" aria-label="Overige taken">
 						<h2>OVERIGE</h2>
 						<!-- item 1-->
 						<div class="ervaring">
@@ -427,7 +402,7 @@
 						<!-- item 2 -->
 					</section>
 					<!-- Talen -->
-					<section id="talen" aria-label="Talen">
+					<section id="talen" class="print" aria-label="Talen">
 						<h2 class="tabel-fix">TALEN</h2>
 						<table>
 							<thead>
@@ -452,7 +427,7 @@
 						</table>
 					</section>
 					<!-- Technische skills -->
-					<section id="skills" aria-label="Technische skills">
+					<section id="skills" class="print" aria-label="Technische skills">
 						<h2 class="tabel-fix">TECHNISCHE SKILLS</h2>
 
 						<table>
@@ -491,7 +466,7 @@
 						</table>
 					</section>
 					<!-- Hobby's -->
-					<section id="hobby's" aria-label="Hobby's">
+					<section id="hobby's" class="print" aria-label="Hobby's">
 						<h2>HOBBY'S</h2>
 						<ul>
 							<li>Gitaar</li>
