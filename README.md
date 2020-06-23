@@ -14,14 +14,13 @@ De Leraar controleert deze keuze aan de hand van de originele bestanden.
 
 ## design
 * -[x] requirements
-* -[ ] stories
 
 ## inhoud
 * -[x] menu
-* -[ ] icons
+* -[x] icons
 * -[x] Persoonlijke gegevens tonen
 * -[x] CV tonen
-* -[ ] Social media informatie/mogelijkheden tonen
+* -[x] Social media informatie/mogelijkheden tonen
 * -[x] Contact informatie/mogelijkheden tonen
 * -[x] Informatie over de persoon tonen
 * -[x] Werkervaring tonen
@@ -52,10 +51,10 @@ De Leraar controleert deze keuze aan de hand van de originele bestanden.
 * css (geen floats)
 
 ## extra
-* -[ ] lettertypes
+* -[x] lettertypes
 * -[ ] menu sticky
 * -[ ] print knop
-* -[ ] mobiele layout
+* -[x] mobiele layout
 
 ## deployment
 * -[x] github
