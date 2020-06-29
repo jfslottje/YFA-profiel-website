@@ -52,12 +52,20 @@ body {
   font-weight: bolder;
 }
 
+.menu-sticky{
+  position: sticky;
+  top: 0%;
+}
+
 nav {
   width: 100%;
   display: flex;
   flex-direction: row;
   padding-bottom: 0;
   font-family: "Raleway", sans-serif;
+  margin-top: auto;
+ 
+
 }
 
 img[aria-hidden="true"] {
@@ -413,19 +421,50 @@ tbody > tr:nth-child(odd) {
     height: 29.7cm;
     margin: 30mm 45mm 30mm 45mm;
  }
+ .print{
+  visibility: visible;
+  overflow: visible !important;
+  height: auto;
+}
+
+.pagina-einde{
+  page-break-after: always;
+}
+
 html{
   color: var(--sectie-achtergrond);
 }
-  .print{
-    visibility: visible;
-  }
-  [aria-label="Persoonlijke gegevens"] > img{
-   width: 100%;
-  }
+  
+[aria-label="Persoonlijke gegevens"] > img{
+  width: 100%;
+}
+
+/* 
+
+[aria-label="Persoonlijke gegevens"]{
+ top: 0;
+ position: absolute;
+}
+
+[aria-label="Persoonlijke informatie"]{
+  top: 40cm;
+  position: absolute;
+}
+
+[aria-label="Werkervaring"]{
+top: 80cm;
+position: absolute;
+}
+
+[aria-label="Opleiding"]{
+  top: 90cm;
+  position: absolute;
+}
+ */
+
   section, aside, main{
     margin: auto;
     padding: 0;
-    
   }
 
   .flex-container{

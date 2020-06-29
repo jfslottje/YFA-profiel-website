@@ -8,6 +8,7 @@ let breedte = 600;
  */
 /* controleerd op een resize van de gehele pagina.*/
 window.addEventListener("resize", Reset);
+
 /* controleerd of er op een menu knop geklikt is.*/
 menu_knop.addEventListener("click", Toggle);
 menu_items.forEach(function(element) {
