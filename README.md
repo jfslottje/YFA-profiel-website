@@ -52,7 +52,7 @@ De Leraar controleert deze keuze aan de hand van de originele bestanden.
 
 ## extra
 * -[x] lettertypes
-* -[ ] menu sticky
+* -[x] menu sticky
 * -[ ] print knop
 * -[x] mobiele layout
 
