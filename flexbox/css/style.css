@@ -408,6 +408,16 @@ tbody > tr:nth-child(odd) {
 }
 
 @media print {
+  [ aria-label = "Curriculum-Vitae" ], [ aria-label = "Social en contact informatie" ],  header {
+    display :  none ;
+ }
+
+ *, section, main, aside {
+  margin: 0;
+  padding: 0;
+  left: 0;
+}
+
   body {
     visibility: hidden;
     width: 21cm;
@@ -428,26 +438,11 @@ tbody > tr:nth-child(odd) {
   html {
     color: var(--sectie-achtergrond);
   }
-  section, main, aside {
-    margin: 0;
-    padding: 0;
-    left: 0;
-  }
-
+  
   .flex-rij {
     flex-direction: column;
     
   }
-
-  .flex-container {
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 100%;
-  }
-
-  [aria-label="Persoonlijke gegevens"] {
-  width: 65%;
-}
 
   /* absolute positionering */
   /*

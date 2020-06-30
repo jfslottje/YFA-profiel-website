@@ -1,6 +1,7 @@
 /** dit script wordt gebruikt in combinatie met de media query's in het css style sheet om een mobiel vriendelijk menu toe te voegen**/
 let menu_knop = document.querySelector(".menu-knop");
 let menu_items = document.querySelectorAll(".menu-item");
+let secties = document.querySelectorAll("section")
 let breedte = 600;
 
 /*
@@ -14,6 +15,11 @@ menu_knop.addEventListener("click", Toggle);
 menu_items.forEach(function(element) {
   element.addEventListener("click", Toggle);
 });
+/* controleerd of er op een sectie geklikt is*/
+secties.forEach(function (element){
+  element.addEventListener("click", Reset);
+})
+
 
 /**
  * De functie toggle veranderd de display style voor de menu items zodat het menu verborgen kan worden achter één menu knop.
