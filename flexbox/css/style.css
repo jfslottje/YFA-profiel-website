@@ -413,6 +413,7 @@ tbody > tr:nth-child(odd) {
     width: 21cm;
     height: 29.7cm;
     margin: 30mm 45mm 30mm 45mm;
+   
   }
   .print {
     visibility: visible;
@@ -427,25 +428,26 @@ tbody > tr:nth-child(odd) {
   html {
     color: var(--sectie-achtergrond);
   }
-  section {
-    width: 100%;
-    margin: auto;
+  section, main, aside {
+    margin: 0;
     padding: 0;
     left: 0;
   }
 
   .flex-rij {
     flex-direction: column;
+    
+  }
+
+  .flex-container {
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
   }
 
   [aria-label="Persoonlijke gegevens"] {
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-
-  /* [aria-label="Persoonlijke gegevens"] > img{
-  width: 100%;
-} */
+  width: 65%;
+}
 
   /* absolute positionering */
   /*
