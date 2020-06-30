@@ -52,7 +52,7 @@ body {
   font-weight: bolder;
 }
 
-.menu-sticky{
+.menu-sticky {
   position: sticky;
   top: 0%;
 }
@@ -64,8 +64,6 @@ nav {
   padding-bottom: 0;
   font-family: "Raleway", sans-serif;
   margin-top: auto;
- 
-
 }
 
 img[aria-hidden="true"] {
@@ -98,7 +96,7 @@ a:hover > h3 {
 
 .social > a:hover,
 .social > a:active {
-  background-color: ffffff;
+  background-color: var(--sectie-achtergrond);
 }
 
 /** hoofd layout **/
@@ -139,7 +137,7 @@ a > h3 {
 }
 
 /** Curriculum-Vitae **/
-.flex-rij > a:hover{
+.flex-rij > a:hover {
   background-color: var(--link-achtergrond);
 }
 /**social**/
@@ -242,7 +240,6 @@ a > h3 {
   align-items: flex-start;
 }
 
-
 [class="ervaring-inhoud"]
   > [class="flex-rij"]
   > [class="flex-rij"]
@@ -294,8 +291,6 @@ aside {
   margin-right: 1rem;
 }
 
-
-
 /**tabellen **/
 .tabel-fix {
   border-bottom: none;
@@ -337,10 +332,9 @@ tbody > tr:nth-child(odd) {
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
   }
-  h2{
+  h2 {
     font-size: 1rem;
     margin-left: 0;
-
   }
   h3 {
     font-size: 0.9rem;
@@ -386,7 +380,6 @@ tbody > tr:nth-child(odd) {
 
   .menu-knop {
     display: flex;
-    
   }
   .menu-item {
     display: none;
@@ -414,65 +407,87 @@ tbody > tr:nth-child(odd) {
   }
 }
 
-@media print  {
-  body{
+@media print {
+  body {
     visibility: hidden;
     width: 21cm;
     height: 29.7cm;
     margin: 30mm 45mm 30mm 45mm;
- }
- .print{
-  visibility: visible;
-  overflow: visible !important;
-  height: auto;
-}
+  }
+  .print {
+    visibility: visible;
+    overflow: visible !important;
+    height: auto !important;
+  }
 
-.pagina-einde{
-  page-break-after: always;
-}
+  .pagina-einde {
+    page-break-after: always;
+  }
 
-html{
-  color: var(--sectie-achtergrond);
-}
-  
-[aria-label="Persoonlijke gegevens"] > img{
-  width: 100%;
-}
-
-/* 
-
-[aria-label="Persoonlijke gegevens"]{
- top: 0;
- position: absolute;
-}
-
-[aria-label="Persoonlijke informatie"]{
-  top: 40cm;
-  position: absolute;
-}
-
-[aria-label="Werkervaring"]{
-top: 80cm;
-position: absolute;
-}
-
-[aria-label="Opleiding"]{
-  top: 90cm;
-  position: absolute;
-}
- */
-
-  section, aside, main{
+  html {
+    color: var(--sectie-achtergrond);
+  }
+  section {
+    width: 100%;
     margin: auto;
     padding: 0;
+    left: 0;
   }
 
-  .flex-container{
-    width: 100%;
-  }
-  
   .flex-rij {
     flex-direction: column;
   }
 
+  [aria-label="Persoonlijke gegevens"] {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  /* [aria-label="Persoonlijke gegevens"] > img{
+  width: 100%;
+} */
+
+  /* absolute positionering */
+  /*
+[aria-label="Persoonlijke gegevens"]{
+ top: 0;
+ left: 10%;
+ position: absolute;
+}
+
+[aria-label="Persoonlijke informatie"]{
+  top: 35cm;
+  position: absolute;
+}
+
+[aria-label="Werkervaring"]{
+top: 70cm;
+position: absolute;
+}
+
+[aria-label="Opleiding"]{
+  top: 85cm;
+  position: absolute;
+}
+ 
+[aria-label="Overige taken"]{
+  top: 100cm;
+  position: absolute;
+}
+
+[aria-label="Talen"]{
+  top: 120cm;
+  position: absolute;
+}
+
+[aria-label="Technische skills"]{
+  top: 140cm;
+  position: absolute;
+  width: 100%;
+}
+
+[aria-label="Hobby's"]{
+  top: 160cm;
+  position: absolute;
+} */
 }
