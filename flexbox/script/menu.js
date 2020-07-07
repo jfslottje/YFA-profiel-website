@@ -3,7 +3,7 @@ let menu_knop = document.querySelector(".menu-knop");
 let menu_items = document.querySelectorAll(".menu-item");
 let secties = document.querySelectorAll("section");
 /**de maximum breedte waar het mobiele menu actief moet zijn.**/
-let breedte = 900;
+let breedte = 779;
 
 /*
  *event listeners
@@ -42,7 +42,7 @@ function Toggle() {
 }
 
 /**
- *zet de menu knoppen in de juiste style als er een resize is geweest.
+ * reset het menu
  */
 function Reset() {
   if (window.innerWidth < breedte) {
