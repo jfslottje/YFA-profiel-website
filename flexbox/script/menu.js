@@ -1,7 +1,8 @@
-/** dit script wordt gebruikt in combinatie met de media query's in het css style sheet om een mobiel vriendelijk menu toe te voegen**/
+/** dit script wordt gebruikt in combinatie met de media query's in het css style sheet om een mobiel vriendelijk menu toe te voegen.**/
 let menu_knop = document.querySelector(".menu-knop");
 let menu_items = document.querySelectorAll(".menu-item");
 let secties = document.querySelectorAll("section");
+/**de maximum breedte waar het mobiele menu actief moet zijn.**/
 let breedte = 900;
 
 /*
@@ -15,7 +16,7 @@ menu_knop.addEventListener("click", Toggle);
 menu_items.forEach(function (element) {
   element.addEventListener("click", Toggle);
 });
-/* controleerd of er op een sectie geklikt is*/
+/* controleerd of er op een sectie geklikt is.*/
 secties.forEach(function (element) {
   element.addEventListener("click", Reset);
 });
@@ -41,10 +42,9 @@ function Toggle() {
 }
 
 /**
- *zet de menu knoppen in de juiste style als er een resize is geweest
+ *zet de menu knoppen in de juiste style als er een resize is geweest.
  */
 function Reset() {
-  /* controleer of de pagina klein genoeg is voor de menuknop.*/
   if (window.innerWidth < breedte) {
     menu_knop.style.display = "flex";
     menu_items.forEach(function (element) {

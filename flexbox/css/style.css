@@ -121,6 +121,10 @@ h3 {
   padding-left: 1rem;
 }
 
+/* p {
+  margin-top: 0;
+} */
+
 [aria-label="Persoonlijke gegevens"] > img {
   height: auto;
   width: 100%;
@@ -203,7 +207,8 @@ a > h3 {
   display: flex;
   flex-direction: column;
   width: 50%;
-  min-width: 9rem;
+  min-width: 11rem;
+  margin-top: 0;
 }
 
 [class="flex-split"] > p:first-child {
@@ -283,7 +288,7 @@ footer {
 }
 
 main {
-  flex: 3 0 0;
+  flex: 2 0 0;
 }
 
 aside {
@@ -324,6 +329,11 @@ tbody > tr:nth-child(odd) {
 
 /** smartphone **/
 @media screen and (min-width: 320px) and (max-width: 600px) {
+  a > p {
+    margin: 0;
+    padding-bottom: 1rem;
+  }
+
   body {
     font-size: 0.8rem;
   }
@@ -387,7 +397,7 @@ tbody > tr:nth-child(odd) {
 }
 
 /** tablet **/
-@media screen and (min-width: 601px) and (max-width: 900px) {
+@media screen and (min-width: 601px) and (max-width: 1000px) {
   .flex-rij,
   nav,
   .flex-split,
@@ -414,8 +424,42 @@ tbody > tr:nth-child(odd) {
     margin: 0;
   }
 
-  .social {
-    justify-content: space-around;
+  .social,
+  .flex-link {
+    justify-content: center;
+  }
+
+  .flex-link > .flex-rij {
+    margin-left: 1rem;
+  }
+
+  .flex-split > p:last-child,
+  a > p {
+    margin: 0;
+    padding-bottom: 1rem;
+  }
+
+  .flex-link > .flex-rij {
+    flex-direction: row;
+  }
+
+  .flex-link > .flex-rij > a > img {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .flex-link > .flex-rij > a:last-child {
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+  .flex-container {
+    width: 100%;
+  }
+
+  .flex-container > div:first-child {
+    flex-direction: column;
   }
 }
 
