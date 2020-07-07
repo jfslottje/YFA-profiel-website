@@ -156,7 +156,7 @@ a > h3 {
 /** flex **/
 
 .flex-container {
-  width: 90%;
+  width: 70%;
   display: flex;
   flex-direction: column;
 }
@@ -464,12 +464,20 @@ tbody > tr:nth-child(odd) {
 }
 
 /** desktop groot scherm **/
-@media screen and (min-width: 1080px) and (max-width: 1200px) {
+@media screen and (min-width: 1080px) and (max-width: 1349px) {
   .flex-container {
-    width: 100%;
+    width: 90%;
+  }
+  section[aria-label="Persoonlijke informatie"] > div {
+    flex-direction: column;
   }
 }
 
+@media screen and (min-width: 1350px) and (max-width: 1540px) {
+  .flex-container {
+    width: 85%;
+  }
+}
 @media print {
   section,
   main,
