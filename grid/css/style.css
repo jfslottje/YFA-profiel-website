@@ -57,6 +57,11 @@ footer {
   color: var(--footer-tekst);
 }
 
+h1 {
+  grid-column: 3/11;
+  grid-row: 1/2;
+}
+
 ul {
   list-style: none;
   padding-bottom: 1rem;
@@ -88,10 +93,6 @@ p {
   font-weight: bold;
 }
 
-.social {
-  display: none;
-}
-
 [aria-label="Persoonlijke gegevens"] > img {
   height: auto;
   width: 100%;
@@ -102,7 +103,59 @@ a > h3 {
   border-top: 1px solid var(--border);
 }
 
+.social {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+
+.social > a > img {
+  padding: 0.5rem;
+  width: 4rem;
+  height: 4rem;
+}
+
+.social > a:nth-child(1) {
+  grid-column: 2/3;
+}
+
+.social > a:nth-child(2) {
+  grid-column: 3/4;
+}
+
+.social > a:nth-child(3) {
+  grid-column: 4/5;
+}
 /** links **/
+.link {
+  background-color: var(--link-achtergrond);
+  color: var(--yfa-blauw);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.link-split {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: start;
+  align-items: center;
+}
+
+[class="link link-split"] > p {
+  white-space: nowrap;
+  margin: 0 1rem;
+}
+
+[class="link link-split"] > img {
+  margin: auto;
+}
+
+[class="link link-split"] > div {
+  margin: 0;
+  padding: 0;
+}
+
 a {
   color: var(--tekst);
   text-decoration: none;
@@ -132,14 +185,13 @@ a:hover > h3 {
 /** menu **/
 header {
   grid-column: 3/11;
-  grid-row: 1/3;
+  grid-row: 2/3;
 }
 nav {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   align-items: center;
-
-  justify-content: start;
+  justify-content: center;
 }
 
 img[aria-hidden="true"] {
@@ -166,7 +218,7 @@ img[aria-hidden="true"] {
   display: grid;
   grid-template-columns: 0.5fr 3fr;
   align-items: center;
-  padding: 0.5rem 1rem;
+  padding: 0.46rem 1rem;
 }
 /**tabellen **/
 .tabel-fix {
