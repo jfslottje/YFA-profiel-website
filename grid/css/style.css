@@ -40,15 +40,11 @@ body {
   gap: 1rem;
 }
 
-header,
-h1 {
-  grid-column: 2/10;
-}
 aside {
-  grid-column: 2/5;
+  grid-column: 3/6;
 }
 main {
-  grid-column: 5/10;
+  grid-column: 6/11;
 }
 
 footer {
@@ -68,6 +64,8 @@ ul {
 
 section {
   background-color: var(--sectie-achtergrond);
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
 
 h2 {
@@ -132,8 +130,16 @@ a:hover > h3 {
 }
 
 /** menu **/
-nav {
+header {
   grid-column: 3/11;
+  grid-row: 1/3;
+}
+nav {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+
+  justify-content: start;
 }
 
 img[aria-hidden="true"] {
@@ -148,6 +154,19 @@ img[aria-hidden="true"] {
 }
 .menu-knop {
   display: none;
+}
+
+.menu-item {
+  background-color: var(--sectie-achtergrond);
+  font-weight: bolder;
+  padding: 1rem;
+}
+
+[href="#opleiding"] {
+  display: grid;
+  grid-template-columns: 0.5fr 3fr;
+  align-items: center;
+  padding: 0.5rem 1rem;
 }
 /**tabellen **/
 .tabel-fix {
