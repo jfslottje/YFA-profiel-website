@@ -153,6 +153,9 @@ a > h3 {
   border-top: 1px solid var(--border);
 }
 
+a > p {
+  margin: 0;
+}
 /** flex **/
 
 .flex-container {
@@ -305,6 +308,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
+  margin-bottom: 1rem;
 }
 
 th,
@@ -473,7 +477,7 @@ tbody > tr:nth-child(odd) {
   }
 }
 
-@media screen and (min-width: 1350px) and (max-width: 1540px) {
+@media screen and (min-width: 1350px) and (max-width: 1700px) {
   .flex-container {
     width: 85%;
   }
@@ -539,10 +543,10 @@ tbody > tr:nth-child(odd) {
     max-width: 370px;
     margin-left: 1rem;
   }
-
+  br,header,
   [aria-label="Curriculum-Vitae"],
   [aria-label="Social en contact informatie"],
-  header,
+  
   /* verwijder overbodige informatie (h2, naam en woonplaats) op de eerste pagina*/
   [aria-label="Persoonlijke informatie"] > h2,
   [aria-label="Persoonlijke informatie"]
