@@ -2,6 +2,7 @@
 let menu_knop = document.querySelector(".menu-knop");
 let menu_items = document.querySelectorAll(".menu-item");
 let secties = document.querySelectorAll("section");
+let nav = document.querySelector("nav");
 /**de maximum breedte waar het mobiele menu actief moet zijn.**/
 let breedte = 779;
 
@@ -29,11 +30,14 @@ function Toggle() {
   if (window.innerWidth < breedte) {
     if (menu_knop.style.display !== "none") {
       menu_knop.style.display = "none";
+      nav.style.gridtemplaterows = "repeat(7, 1fr)";
       menu_items.forEach(function (element) {
-        element.style.display = "flex";
+        element.style.display = "grid";
       });
     } else {
-      menu_knop.style.display = "flex";
+      menu_knop.style.display = "grid";
+      nav.style.gridtemplaterows = "1fr";
+      console.log("1fr");
       menu_items.forEach(function (element) {
         element.style.display = "none";
       });
@@ -46,14 +50,17 @@ function Toggle() {
  */
 function Reset() {
   if (window.innerWidth < breedte) {
-    menu_knop.style.display = "flex";
+    menu_knop.style.display = "grid";
+    nav.style.gridtemplaterows = "1fr";
+    console.log("1fr");
     menu_items.forEach(function (element) {
       element.style.display = "none";
     });
   } else {
     menu_knop.style.display = "none";
+    nav.style.gridtemplaterows = "repeat(7, 1fr)";
     menu_items.forEach(function (element) {
-      element.style.display = "flex";
+      element.style.display = "grid";
     });
   }
 }
