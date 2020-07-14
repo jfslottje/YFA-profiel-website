@@ -80,17 +80,9 @@ h2 {
 p {
   margin-bottom: 0;
 }
-.split {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-  justify-items: left;
-}
 
-[class="split"] > p:first-child {
-  padding-left: 1rem;
-  text-transform: uppercase;
-  font-weight: bold;
+a > h3 {
+  border-top: 1px solid var(--border);
 }
 
 [aria-label="Persoonlijke gegevens"] > img {
@@ -99,34 +91,75 @@ p {
   padding-bottom: 1rem;
 }
 
-a > h3 {
-  border-top: 1px solid var(--border);
+.col-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  justify-items: left;
 }
 
-.social {
+.col-2 > p:first-child {
+  padding-left: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.col-5 {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  justify-content: center;
+  justify-items: center;
   align-items: center;
 }
 
-.social > a > img {
+/** werkervaring **/
+.ervaring {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  justify-items: start;
+  margin-bottom: 1rem;
+}
+
+.ervaring > p:first-child {
+  margin: 0;
+  font-weight: bold;
+}
+
+.ervaring ~ p {
+  margin-left: 20%;
+}
+
+.ervaring-inhoud {
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+
+.ervaring-inhoud > h3 {
+  margin-top: 0;
+}
+
+.ervaring-inhoud > div > :first-child {
+  margin-top: 0;
+}
+
+/** social **/
+.col-5 > a > img {
   padding: 0.5rem;
   width: 4rem;
   height: 4rem;
 }
 
-.social > a:nth-child(1) {
+.col-5 > a:nth-child(1) {
   grid-column: 2/3;
 }
 
-.social > a:nth-child(2) {
+.col-5 > a:nth-child(2) {
   grid-column: 3/4;
 }
 
-.social > a:nth-child(3) {
+.col-5 > a:nth-child(3) {
   grid-column: 4/5;
 }
+
 /** links **/
 .link {
   background-color: var(--link-achtergrond);
@@ -135,23 +168,20 @@ a > h3 {
   margin-bottom: 1rem;
   text-align: center;
 }
-.link-split {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: start;
-  align-items: center;
-}
 
-[class="link link-split"] > p {
+[class="link col-5"] > p {
   white-space: nowrap;
   margin: 0 1rem;
+  grid-column: 3/4;
 }
 
-[class="link link-split"] > img {
+[class="link col-5"] > img {
   margin: auto;
+  grid-column: 2/3;
 }
 
-[class="link link-split"] > div {
+[class="link col-5"] > div {
+  grid-column: 4/5;
   margin: 0;
   padding: 0;
 }
@@ -168,7 +198,7 @@ a:hover > h3 {
   background-color: var(--yfa-blauw);
   color: var(--link-achtergrond);
 }
-[aria-hidden="true"] ~ p {
+[aria-hidden="true"] ~ span {
   color: var(--yfa-blauw);
 }
 
@@ -220,6 +250,7 @@ img[aria-hidden="true"] {
   align-items: center;
   padding: 0.46rem 1rem;
 }
+
 /**tabellen **/
 .tabel-fix {
   border-bottom: none;

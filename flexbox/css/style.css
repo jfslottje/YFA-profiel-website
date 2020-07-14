@@ -204,7 +204,7 @@ a > p {
   margin: 0;
 }
 
-[class="flex-split"] > p {
+.flex-split > p {
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -212,7 +212,7 @@ a > p {
   margin-top: 0;
 }
 
-[class="flex-split"] > p:first-child {
+.flex-split > p:first-child {
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -225,7 +225,7 @@ a > p {
   margin-left: 1rem;
 }
 
-[class="ervaring"] > p {
+.ervaring > p {
   margin: 0;
   font-weight: bold;
 }
@@ -237,28 +237,21 @@ a > p {
   margin-left: 4rem;
 }
 
-[class="ervaring-inhoud"] > p {
+.ervaring-inhoud > p {
   padding-right: 2rem;
 }
 
-[class="ervaring-inhoud"] > [class="flex-rij"] {
+.ervaring-inhoud > .flex-rij {
   justify-content: space-between;
   align-items: flex-start;
 }
 
-[class="ervaring-inhoud"]
-  > [class="flex-rij"]
-  > [class="flex-rij"]
-  > img
-  ~ span {
+.ervaring-inhoud > .flex-rij > .flex-rij > img ~ span {
   padding-right: 2rem;
 }
 
-[class="ervaring-inhoud"] > [class="flex-rij"] > [class="flex-kolom"] > h3,
-[class="ervaring-inhoud"]
-  > [class="flex-rij"]
-  > [class="flex-kolom"]
-  > p:last-child {
+.ervaring-inhoud > .flex-rij > .flex-kolom > h3,
+.ervaring-inhoud > .flex-rij > .flex-kolom > p:last-child {
   margin: 0;
   padding: 0;
 }
@@ -267,7 +260,7 @@ a > p {
   color: var(--yfa-blauw);
 }
 
-[class="flex-kolom"] > h3 ~ p {
+.flex-kolom > h3 ~ p {
   margin-bottom: 0;
 }
 

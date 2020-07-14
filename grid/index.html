@@ -86,50 +86,50 @@
             <h2>PERSOONLIJKE GEGEVENS</h2>
             <img src="./images/avatar.jpg" alt="avatar" title="avatar" />
 
-            <div class="split">
+            <div class="col-2">
               <p>Naam</p>
               <p>Pietje</p>
             </div>
-            <div class="split">
+            <div class="col-2">
               <p>Achternaam</p>
               <p>Puk</p>
             </div>
 
-            <div class="split">
+            <div class="col-2">
               <p>Adres</p>
               <p>STRAAT 110</p>
             </div>
-            <div class="split">
+            <div class="col-2">
               <p>Postcode</p>
               <p>1234 AB</p>
             </div>
-            <div class="split">
+            <div class="col-2">
               <p>Plaats</p>
               <p>Amsterdam</p>
             </div>
-            <div class="split">
+            <div class="col-2">
               <p>Telefoonnummer</p>
               <p>(800) 123-4567</p>
             </div>
-            <div class="split">
+            <div class="col-2">
               <p>Email</p>
               <a href="mailto:voorbeeld@voorbeeld">
                 <p>voorbeeld@voorbeeld.nl</p></a
               >
             </div>
-            <div class="split">
+            <div class="col-2">
               <p>Website</p>
               <a href="https://voorbeeld.nl"><p>voorbeeld.nl</p></a>
             </div>
-            <div class="split">
+            <div class="col-2">
               <p>Geboortedatum</p>
               <p>30-01-1976</p>
             </div>
-            <div class="split">
+            <div class="col-2">
               <p>Geboorteplaats</p>
               <p>Amsterdam</p>
             </div>
-            <div class="split">
+            <div class="col-2">
               <p>geboorteland</p>
               <p>Nederland</p>
             </div>
@@ -138,14 +138,14 @@
           <!-- Curriculum-Vitae -->
           <section aria-label="Curriculum-Vitae">
             <h2>PRINT/DOWNLOAD CV</h2>
-            <div class="link link-split">
+            <div class="link col-5">
             <img
                   src="./images/icons/pdf-icon.jpg"
                   aria-hidden="true"
                   alt="PDF icoon"
                 />
                 <p>Curriculum-Vitae.pdf</p>
-                <div>
+                <div class="col-2">
                 <a
                     ><img
                       src="./images/icons/eye-outline.svg"
@@ -166,7 +166,7 @@
           <section aria-label="Social en contact informatie">
             <!-- social media -->
             <h2>SOCIALMEDIA</h2>
-            <div class="social">
+            <div class="col-5">
               <a href="https://www.facebook.com/"
                 ><img
                   src="./images/icons/facebook.svg"
@@ -200,38 +200,40 @@
             aria-label="Persoonlijke informatie"
           >
             <h2>OVER MIJ</h2>
-            <!-- <div class="split"> -->
-                <div class="split">
+            <div class="col-2">
+            <div>
+                <div class="col-2">
                   <p>Naam</p>
                   <p>Pietje Puk</p>
                 </div>
-                <div class="split">
+                <div class="col-2">
                   <p>Woonplaats</p>
                   <p>Amsterdam, Nederland</p>
                 </div>
-                <div class="split">
+                <div class="col-2">
                   <p>Rijbewijs</p>
                   <p>A.B.C</p>
                 </div>
-                <div class="split">
+                <div class="col-2">
                   <p>Leefsituatie</p>
                   <p>getrouwd 1 kind</p>
                 </div>
-              <!-- </div> -->
-              <!-- <div class="split"> -->
-                <div class="split">
+              </div>
+             <div>
+                <div class="col-2">
                   <p>Leeftijd</p>
                   <p>38 jaar</p>
                 </div>
-                <div class="split">
+                <div class="col-2">
                   <p>Jaren werkervaring</p>
                   <p>15 jaar</p>
                 </div>
-                <div class="split">
+                <div class="col-2">
                   <p>Carriére niveau</p>
                   <p>Mid-level</p>
                 </div>
-              <!-- </div> -->
+              </div>
+            </div>
             <h2>SAMENVATTING</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
@@ -250,22 +252,26 @@
           <section id="werk-ervaring" class="print" aria-label="Werkervaring">
             <h2>WERKERVARING</h2>
             <!-- item 1-->
-              <p>2002-2008</p>
+            <div class="ervaring">
+              <p>2002-2008</p><div>
+              <div>
                     <h3>Wordpress Developer</h3>
                     <p>Market Network</p>
                     <p>
                       San Francisco, California, USA
                     </p>
-
+              </div>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
                   nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras
                   vel12 lorem. Etiam pellentesque aliquet tellus. Phasellus
                   pharetra nulla ac diam (...)
                 </p>
-
+              </div></div>
             <!-- item 2 -->
+            <div class="ervaring">
               <p>2009-2016</p>
+              <div>
                     <h3>HTML5 and CSS3 Developer</h3>
                     <p>Market Network</p>
                     <p>San Francisco, California, USA</p>
@@ -274,7 +280,8 @@
                   nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras
                   vel lorem. Etiam pellentesque aliquet tellus. Phasellus
                   pharetra nulla ac diam (...)
-                </p>
+                </p></div>
+              </div>
           </section>
           <!-- Opleiding -->
           <section
@@ -285,23 +292,27 @@
             <h2>OPLEIDINGEN EN CURSUSSEN</h2>
 
             <!-- item 1-->
+            <div class="ervaring">
               <p>2002-2008</p>
+              <div class="ervaring-inhoud">
+                <div>
                     <h3>Multimedia Arts</h3>
                     <p>Market Network</p>
-                    <p>San Francisco, California, USA</p>
+                    <p>San Francisco, California, USA</p></div>
+                    <div>
                     <img
                       src="./images/icons/graduate.svg"
                       alt="Icon made by Freepik from www.flaticon.com"
                       title="diploma gehaald"
                       aria-hidden="true"
-                    /><span>Diploma gehaald</span>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-                  nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras
-                  vel lorem. Etiam pellentesque aliquet tellus. Phasellus
-                  pharetra nulla ac diam (...)
-                </p>
-
+                    /><span>Diploma gehaald</span></div>
+                
+              </div></div><p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras
+                vel lorem. Etiam pellentesque aliquet tellus. Phasellus
+                pharetra nulla ac diam (...)
+              </p>
             <!-- item 2 -->
               <p>2009-2016</p>
                     <h3>Mathematics in Computer Science</h3>
@@ -324,11 +335,13 @@
           <section id="overige" class="print" aria-label="Overige taken">
             <h2>OVERIGE</h2>
             <!-- item 1-->
+            <div class="ervaring">
               <p>2002-2008</p>
+              <div class="ervaring-inhoud">
                     <h3>Honkbal Coach</h3>
                     <p>Quick Amsterdam</p>
                     <p>Noord Holland, Amsterdam, Nederland</p>
-                    <span>Vrijwilligers werk</span>
+                    <span>Vrijwilligers werk</span></div></div>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
                   nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras
