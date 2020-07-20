@@ -543,13 +543,13 @@ tbody > tr:nth-child(odd) {
   /* verwijder overbodige informatie (h2, naam en woonplaats) op de eerste pagina*/
   [aria-label="Persoonlijke informatie"] > h2,
   [aria-label="Persoonlijke informatie"]
-    > [class="flex-rij"]
-    > [class="flex-kolom"]
-    > [class="flex-split"]:first-child,
+    > .flex-rij
+    > .flex-kolom
+    > .flex-split:first-child,
   [aria-label="Persoonlijke informatie"]
-    > [class="flex-rij"]
-    > [class="flex-kolom"]
-    > [class="flex-split"]:nth-child(2) {
+    > .flex-rij
+    > .flex-kolom:first-child
+    > .flex-split:nth-child(2) {
     display: none;
   }
 }
