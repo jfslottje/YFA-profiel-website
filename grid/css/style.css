@@ -66,6 +66,7 @@ footer {
 h1 {
   grid-column: 3/11;
   grid-row: 1/2;
+  margin-bottom: 0;
 }
 
 h2 {
@@ -282,9 +283,6 @@ img[aria-hidden="true"] {
   padding: 1rem;
 }
 
-/* nav > a:not([href="#opleiding"]) {
-  padding-top: 1.5rem;
-} */
 /**tabellen **/
 .tabel-fix {
   border-bottom: none;
@@ -325,6 +323,7 @@ tbody > tr:nth-child(odd) {
   header {
     grid-column: 1/13;
     grid-row: 2/3;
+    margin-bottom: 1rem;
   }
 
   h1 {
@@ -449,10 +448,6 @@ tbody > tr:nth-child(odd) {
 
 /** tablet **/
 @media screen and (min-width: 601px) and (max-width: 779px) {
-  body {
-    background-color: blueviolet;
-  }
-
   header {
     grid-column: 1/13;
     grid-row: 2/3;
@@ -468,6 +463,23 @@ tbody > tr:nth-child(odd) {
   }
   main {
     grid-column: 1/13;
+  }
+
+  nav {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  a.menu-knop {
+    padding: 1rem;
+    background-color: var(--sectie-achtergrond);
+  }
+
+  .menu-knop {
+    display: grid;
+  }
+  .menu-item {
+    display: none;
   }
 }
 
@@ -496,7 +508,7 @@ tbody > tr:nth-child(odd) {
 }
 
 /** desktop groot scherm **/
-@media screen and (min-width: 1080px) and (max-width: 1200px) {
+@media screen and (min-width: 1080px) and (max-width: 1300px) {
   header {
     grid-column: 1/13;
     grid-row: 2/3;
@@ -516,5 +528,70 @@ tbody > tr:nth-child(odd) {
 }
 
 @media print {
+  .print {
+    visibility: visible;
+    height: auto !important;
+  }
+
+  .pagina-einde {
+    page-break-after: always !important;
+  }
+
+  nav,
+  footer,
+  [aria-label="Curriculum-Vitae"],
+  [aria-label="Social en contact informatie"] {
+    display: none;
+  }
+
+  section,
+  aside,
+  main {
+    margin: 0;
+    padding: 0;
+  }
+
+  aside,
+  main,
+  h1 {
+    grid-column: 1/13;
+  }
+
+  [alt="avatar"] {
+    max-width: 370px;
+  }
+
+  body,
+  [aria-label="Persoonlijke informatie"] > .kolom-2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0;
+  }
+
+  [aria-label="Persoonlijke informatie"] > .kolom-2 > div {
+    width: 100%;
+  }
+  .kolom-2 > p,
+  .kolom-2 > a > p {
+    margin-top: 0;
+  }
+  [aria-label="Persoonlijke informatie"]
+    > .kolom-2
+    > div
+    > .kolom-2
+    > p:first-child {
+    margin-left: 1rem;
+  }
   /* verwijder overbodige informatie (h2, naam en woonplaats) op de eerste pagina*/
+  [aria-label="Persoonlijke informatie"] > h2,
+  [aria-label="Persoonlijke informatie"]
+    > .kolom-2
+    > div
+    > .kolom-2:first-child,
+  [aria-label="Persoonlijke informatie"]
+    > .kolom-2
+    > div:first-child
+    > .kolom-2:nth-child(2) {
+    display: none;
+  }
 }

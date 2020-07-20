@@ -37,7 +37,6 @@ function Toggle() {
     } else {
       menu_knop.style.display = "grid";
       nav.style.gridtemplaterows = "1fr";
-      console.log("1fr");
       menu_items.forEach(function (element) {
         element.style.display = "none";
       });
@@ -52,7 +51,6 @@ function Reset() {
   if (window.innerWidth < breedte) {
     menu_knop.style.display = "grid";
     nav.style.gridtemplaterows = "1fr";
-    console.log("1fr");
     menu_items.forEach(function (element) {
       element.style.display = "none";
     });
