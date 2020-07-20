@@ -71,6 +71,8 @@ h1 {
 
 h2 {
   border-bottom: 1px solid var(--border);
+  margin-top: 0;
+  padding-bottom: 1rem;
 }
 
 h3 {
