@@ -3,6 +3,10 @@
   max-width: 370px;
 }
 
+.social > a > img {
+  height: 3rem;
+  width: 3rem;
+}
 /** box fix **/
 html {
   box-sizing: border-box;
@@ -48,11 +52,6 @@ footer {
   color: var(--footer-tekst);
 }
 
-ul {
-  list-style: none;
-  padding-bottom: 1rem;
-}
-
 section {
   background-color: var(--sectie-achtergrond);
 }
@@ -61,18 +60,9 @@ h2 {
   border-bottom: 1px solid var(--border);
 }
 
-.social {
-  display: none;
-}
-
-[aria-label="Persoonlijke gegevens"] > img {
-  height: auto;
-  width: 100%;
-  padding-bottom: 1rem;
-}
-
 a > h3 {
   border-top: 1px solid var(--border);
+  font-size: 1.25rem;
 }
 
 /** links **/
@@ -88,8 +78,15 @@ a:hover > h3 {
   background-color: var(--yfa-blauw);
   color: var(--link-achtergrond);
 }
+
 [aria-hidden="true"] ~ p {
   color: var(--yfa-blauw);
+}
+
+.link {
+  background-color: var(--link-achtergrond);
+  color: var(--yfa-blauw);
+  margin-bottom: 1rem;
 }
 
 .social > a > img:hover,
@@ -106,20 +103,20 @@ a:hover > h3 {
 
 img[aria-hidden="true"] {
   width: 1.2rem;
+  max-width: 3rem;
   height: 1.2rem;
   margin-right: 1rem;
 }
-
-.menu-sticky {
-  position: sticky;
-  top: 0%;
+img[alt="PDF icoon"] {
+  margin-right: 0;
 }
 
-.menu-knop {
-  display: none;
+.navbar {
+  padding: 0.5rem 0rem;
 }
 
-.menu-item {
+.navbar-toggler,
+.nav-link {
   background-color: var(--sectie-achtergrond);
   font-weight: bolder;
   padding: 1rem;
