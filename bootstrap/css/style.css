@@ -162,8 +162,8 @@ tbody > tr:nth-child(odd) {
 }
 
 @media (min-width: 992px) {
-  #navbarSupportedContent {
-    padding: 0.5rem 0;
+  nav {
+    margin: 0 -1rem;
   }
 }
 
@@ -203,8 +203,7 @@ tbody > tr:nth-child(odd) {
   }
 
   h1 {
-    margin-left: 0;
-    padding-left: 0;
+    margin-left: -1rem;
   }
   /* verwijder overbodige informatie (h2, naam en woonplaats) op de eerste pagina*/
 }
