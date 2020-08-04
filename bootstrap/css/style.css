@@ -1,6 +1,7 @@
 /* tijdelijk */
 [alt="avatar"] {
   max-width: 370px;
+  margin: 0 auto;
 }
 
 .social > a > img {
@@ -11,6 +12,7 @@
 p {
   margin-bottom: 0;
 }
+
 /** box fix **/
 html {
   box-sizing: border-box;
@@ -51,7 +53,6 @@ body {
 }
 
 footer {
-  width: 100%;
   background-color: var(--tekst);
   color: var(--footer-tekst);
 }
@@ -116,7 +117,7 @@ img[alt="PDF icoon"] {
 }
 
 .navbar {
-  padding: 0.5rem 0rem;
+  padding: 1rem 0rem;
 }
 
 .navbar-toggler,
@@ -212,5 +213,4 @@ tbody > tr:nth-child(odd) {
       margin-top: -2rem;
     }
   }
-  /* verwijder overbodige informatie (h2, naam en woonplaats) op de eerste pagina*/
 }
