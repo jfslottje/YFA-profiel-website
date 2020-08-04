@@ -39,6 +39,7 @@ h1,
 h2,
 h3 {
   font-family: "Raleway", sans-serif;
+  font-weight: bold;
 }
 
 body {
@@ -47,6 +48,18 @@ body {
   color: var(--tekst);
 }
 
+h2 {
+  border-bottom: 1px solid var(--border);
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.17rem;
+}
 /** layout **/
 body {
   background-color: var(--site-achtergrond);
@@ -61,8 +74,8 @@ section {
   background-color: var(--sectie-achtergrond);
 }
 
-h2 {
-  border-bottom: 1px solid var(--border);
+h1 {
+  margin-left: -15px;
 }
 
 a > h3 {

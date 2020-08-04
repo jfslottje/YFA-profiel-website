@@ -56,6 +56,7 @@ body {
   justify-content: center;
   background-color: var(--sectie-achtergrond);
   font-weight: bolder;
+  white-space: nowrap;
 }
 
 .menu-sticky {
@@ -170,7 +171,7 @@ a > p {
 /** flex **/
 
 .flex-container {
-  width: 70%;
+  width: 60%;
   display: flex;
   flex-direction: column;
 }
@@ -299,7 +300,7 @@ main {
 }
 
 aside {
-  flex: 1 0 0;
+  flex: 0 0 0;
   margin-right: 1rem;
 }
 
@@ -482,7 +483,7 @@ tbody > tr:nth-child(odd) {
 }
 
 /** desktop groot scherm **/
-@media screen and (min-width: 1080px) and (max-width: 1349px) {
+@media screen and (min-width: 992) {
   .flex-container {
     width: 90%;
   }
@@ -491,7 +492,7 @@ tbody > tr:nth-child(odd) {
   }
 }
 
-@media screen and (min-width: 1350px) and (max-width: 1700px) {
+@media screen and (min-width: 1200) {
   .flex-container {
     width: 85%;
   }
