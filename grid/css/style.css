@@ -36,26 +36,26 @@ body {
 body {
   background-color: var(--site-achtergrond);
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(24, 1fr);
   gap: 1rem;
 }
 
 header {
-  grid-column: 3/11;
+  grid-column: 6/20;
   grid-row: 2/3;
 }
 
 aside {
-  grid-column: 3/6;
+  grid-column: 6/11;
 }
 
 main {
-  grid-column: 6/11;
+  grid-column: 11/20;
 }
 
 footer {
   display: grid;
-  grid-column: 1/13;
+  grid-column: 1/25;
   justify-content: center;
   width: 100%;
   padding: 1rem 0;
@@ -64,7 +64,7 @@ footer {
 }
 
 h1 {
-  grid-column: 3/11;
+  grid-column: 6/20;
   grid-row: 1/2;
   margin-bottom: 0;
 }
@@ -112,10 +112,16 @@ a > h3 {
   max-width: 370px;
   margin: 0 auto 1rem;
 }
+.kolom-split {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  justify-items: left;
+}
 
 .kolom-2 {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 50% 50%;
   gap: 1rem;
   justify-items: left;
 }
@@ -135,6 +141,13 @@ a > h3 {
   justify-items: center;
   align-items: center;
 }
+
+.kolom-7 {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-items: center;
+  align-items: center;
+}
 /** persoonlijke gegevens **/
 [aria-label="Persoonlijke gegevens"] > img {
   height: auto;
@@ -144,7 +157,7 @@ a > h3 {
 /** werkervaring **/
 .ervaring {
   display: grid;
-  grid-template-columns: 15% 65% 20%;
+  grid-template-columns: 15% 60% 20%;
   justify-items: start;
   margin-bottom: 1rem;
 }
@@ -184,25 +197,25 @@ a > h3 {
 }
 
 .ervaring-inhoud > p:last-child {
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 
-.kolom-5 > a > img {
+.kolom-7 > a > img {
   padding: 0.5rem;
   width: 4rem;
   height: 4rem;
 }
 
-.kolom-5 > a:nth-child(1) {
+.kolom-7 > a:nth-child(1) {
   grid-column: 2/3;
 }
 
-.kolom-5 > a:nth-child(2) {
-  grid-column: 3/4;
+.kolom-7 > a:nth-child(2) {
+  grid-column: 4/5;
 }
 
-.kolom-5 > a:nth-child(3) {
-  grid-column: 4/5;
+.kolom-7 > a:nth-child(3) {
+  grid-column: 6/7;
 }
 
 /** links **/
@@ -326,6 +339,7 @@ tbody > tr:nth-child(odd) {
 @media screen and (min-width: 320px) and (max-width: 600px) {
   body {
     gap: 0;
+    grid-template-columns: repeat(12, 1fr);
   }
 
   header {
@@ -492,7 +506,7 @@ tbody > tr:nth-child(odd) {
 }
 
 /** desktop klein scherm **/
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) and (max-width: 1460px) {
   header {
     grid-column: 1/13;
     grid-row: 2/3;
@@ -514,6 +528,8 @@ tbody > tr:nth-child(odd) {
     padding: 0;
   }
 }
+
+/** desktop groot scherm **/
 
 @media print {
   .print {
