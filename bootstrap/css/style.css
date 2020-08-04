@@ -130,7 +130,7 @@ img[alt="PDF icoon"] {
 }
 
 .navbar {
-  padding: 1rem 0rem;
+  padding: 0 0 1rem;
 }
 
 .navbar-toggler,
