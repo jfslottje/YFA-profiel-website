@@ -41,11 +41,11 @@ De Leraar controleert deze keuze aan de hand van de originele bestanden.
 * -[x] html flexbox variant
 * -[x] css flexbox variant
 
-- -[ ] html grid variant
-- -[ ] css grid variant
+- -[x] html grid variant
+- -[x] css grid variant
 
-* -[ ] html bootstrap variant
-* -[ ] bootstrap css/javascript/jquery importeren
+* -[x] html bootstrap variant
+* -[x] bootstrap css/javascript/jquery importeren
 
 ## ongewenst
 
@@ -57,6 +57,27 @@ De Leraar controleert deze keuze aan de hand van de originele bestanden.
 - -[x] menu sticky
 - -[x] print knop
 - -[x] mobiele layout
+
+## media queries
+desktop (xl)
+ - -[x]bootstrap
+ - -[]flexbox
+ - -[x]grid
+ 
+ desktop (lg)
+ - -[]bootstrap
+ - -[]flexbox
+ - -[]grid
+ 
+ tablet (md)
+ - -[]bootstrap
+ - -[]flexbox
+ - -[]grid
+ 
+ smartphone (sm)
+ - -[]bootstrap
+ - -[]flexbox
+ - -[]grid
 
 ## deployment
 
