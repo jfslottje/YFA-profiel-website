@@ -472,7 +472,7 @@ tbody > tr:nth-child(odd) {
 }
 
 /** desktop klein scherm **/
-@media screen and (min-width: 780px) and (max-width: 1079px) {
+@media screen and (min-width: 992px) {
   .flex-container {
     width: 100%;
   }
@@ -483,7 +483,7 @@ tbody > tr:nth-child(odd) {
 }
 
 /** desktop groot scherm **/
-@media screen and (min-width: 992) {
+@media screen and (min-width: 1200px) {
   .flex-container {
     width: 90%;
   }
@@ -492,11 +492,12 @@ tbody > tr:nth-child(odd) {
   }
 }
 
-@media screen and (min-width: 1200) {
+@media screen and (min-width: 1400px) {
   .flex-container {
-    width: 85%;
+    width: 60%;
   }
 }
+
 @media print {
   section,
   main,
