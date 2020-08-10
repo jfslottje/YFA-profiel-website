@@ -494,10 +494,15 @@ tbody > tr:nth-child(odd) {
 
 @media screen and (min-width: 1400px) {
   .flex-container {
-    width: 60%;
+    width: 80%;
   }
 }
 
+@media screen and (min-width: 1600px) {
+  .flex-container {
+    width: 60%;
+  }
+}
 @media print {
   section,
   main,
