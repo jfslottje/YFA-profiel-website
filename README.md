@@ -61,7 +61,7 @@ De Leraar controleert deze keuze aan de hand van de originele bestanden.
 ## media queries
 desktop (xl)
  - -[x]bootstrap
- - -[]flexbox
+ - -[x]flexbox
  - -[x]grid
  
  desktop (lg)

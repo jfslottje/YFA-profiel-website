@@ -4,7 +4,7 @@ let menu_items = document.querySelectorAll(".menu-item");
 let secties = document.querySelectorAll("section");
 let nav = document.querySelector("nav");
 /**de maximum breedte waar het mobiele menu actief moet zijn.**/
-let breedte = 779;
+let breedte = 992;
 
 /*
  *event listeners
