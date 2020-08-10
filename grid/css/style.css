@@ -470,6 +470,10 @@ tbody > tr:nth-child(odd) {
 
 /** tablet **/
 @media screen and (min-width: 601px) and (max-width: 779px) {
+  body {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
   header {
     grid-column: 1/13;
     grid-row: 2/3;
@@ -506,7 +510,11 @@ tbody > tr:nth-child(odd) {
 }
 
 /** desktop klein scherm **/
-@media screen and (min-width: 992px) and (max-width: 1460px) {
+@media screen and (min-width: 991px) and (max-width: 1460px) {
+  body {
+    grid-template-columns: 0;
+  }
+
   header {
     grid-column: 1/13;
     grid-row: 2/3;
