@@ -3,24 +3,27 @@ let menu_knop = document.querySelector(".menu-knop");
 let menu_items = document.querySelectorAll(".menu-item");
 let secties = document.querySelectorAll("section");
 let nav = document.querySelector("nav");
+
 /**de maximum breedte waar het mobiele menu actief moet zijn.**/
-let breedte = 992;
+const breedte = 992;
 
 /*
  *event listeners
  */
-/* controleerd op een resize van de gehele pagina.*/
-window.addEventListener("resize", Reset);
 
 /* controleerd of er op een menu knop geklikt is.*/
 menu_knop.addEventListener("click", Toggle);
 menu_items.forEach(function (element) {
   element.addEventListener("click", Toggle);
 });
+
 /* controleerd of er op een sectie geklikt is.*/
 secties.forEach(function (element) {
   element.addEventListener("click", Reset);
 });
+
+/* controleerd op een resize van de gehele pagina.*/
+window.addEventListener("resize", Reset);
 
 /**
  * De functie toggle veranderd de display style voor de menu items zodat het menu verborgen kan worden achter één menu knop.
@@ -62,3 +65,5 @@ function Reset() {
     });
   }
 }
+
+Reset();

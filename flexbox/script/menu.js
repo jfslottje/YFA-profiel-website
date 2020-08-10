@@ -3,11 +3,12 @@ let menu_knop = document.querySelector(".menu-knop");
 let menu_items = document.querySelectorAll(".menu-item");
 let secties = document.querySelectorAll("section");
 /**de maximum breedte waar het mobiele menu actief moet zijn.**/
-let breedte = 779;
+let breedte = 992;
 
 /*
  *event listeners
  */
+
 /* controleerd op een resize van de gehele pagina.*/
 window.addEventListener("resize", Reset);
 
@@ -16,6 +17,7 @@ menu_knop.addEventListener("click", Toggle);
 menu_items.forEach(function (element) {
   element.addEventListener("click", Toggle);
 });
+
 /* controleerd of er op een sectie geklikt is.*/
 secties.forEach(function (element) {
   element.addEventListener("click", Reset);
@@ -57,3 +59,5 @@ function Reset() {
     });
   }
 }
+
+Reset();
