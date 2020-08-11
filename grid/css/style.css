@@ -82,7 +82,6 @@ h2:nth-child(3) {
 
 h3 {
   margin: 0;
-  white-space: nowrap;
 }
 
 p {
@@ -348,7 +347,7 @@ tbody > tr:nth-child(odd) {
 /** tablet **/
 @media screen and (min-width: 576px) {
   aside {
-    grid-column: 2/12;
+    grid-column: 1/13;
   }
   main {
     grid-column: 1/13;
@@ -373,8 +372,9 @@ tbody > tr:nth-child(odd) {
   }
 
   [alt="avatar"] {
-    margin-left: 2rem;
+    display: grid;
   }
+
   .ervaring > p:first-child {
     margin: 0;
     font-weight: bold;
@@ -425,6 +425,15 @@ tbody > tr:nth-child(odd) {
   .ervaring {
     grid-template-columns: 20% 50% 30%;
     align-items: center;
+  }
+
+  [aria-label="Persoonlijke gegevens"] > .kolom-2 {
+    grid-template-columns: 100%;
+    gap: 0;
+  }
+
+  .kolom-2 > div {
+    width: 100%;
   }
 }
 

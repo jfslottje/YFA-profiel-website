@@ -232,11 +232,15 @@ a > p {
   width: auto;
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: center;
 }
 .ervaring > p {
   margin: 0;
   font-weight: bold;
+}
+
+.ervaring > p:first-child {
+  white-space: nowrap;
 }
 
 .ervaring > h3 {

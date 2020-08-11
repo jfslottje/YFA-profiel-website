@@ -176,6 +176,10 @@ tbody > tr:nth-child(odd) {
   table {
     font-size: medium;
   }
+
+  .social > a > img {
+    width: 6rem !important;
+  }
 }
 
 @media (min-width: 992px) {
