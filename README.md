@@ -60,23 +60,23 @@ De Leraar controleert deze keuze aan de hand van de originele bestanden.
 
 ## media queries
 desktop (xl)
- - -[]bootstrap
- - -[]flexbox
+ - -[x]bootstrap
+ - -[x]flexbox
  - -[x]grid
  
  desktop (lg)
  - -[]bootstrap
- - -[]flexbox
+ - -[x]flexbox
  - -[x]grid
  
  tablet (md)
  - -[]bootstrap
- - -[]flexbox
+ - -[x]flexbox
  - -[x]grid
  
  smartphone (sm)
- - -[]bootstrap
- - -[]flexbox
+ - -[x]bootstrap
+ - -[x]flexbox
  - -[x]grid
 
 ## deployment
