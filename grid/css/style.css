@@ -438,15 +438,22 @@ tbody > tr:nth-child(odd) {
 }
 
 /** desktop groot scherm **/
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   aside {
-    grid-column: 2/5;
+    grid-column: 2/6;
   }
   main {
-    grid-column: 5/12;
+    grid-column: 6/12;
   }
   header {
     grid-column: 2/12;
+  }
+  h1 {
+    grid-column: 2/12;
+  }
+
+  header {
+    margin: 0;
   }
 }
 
