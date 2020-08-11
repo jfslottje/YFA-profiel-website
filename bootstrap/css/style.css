@@ -83,6 +83,9 @@ a > h3 {
   font-size: 1.25rem;
 }
 
+ul {
+  list-style: none;
+}
 /** links **/
 a {
   color: var(--tekst);

@@ -43,12 +43,13 @@ body {
 h1 {
   grid-column: 1/13;
   grid-row: 1/2;
-  margin: 0;
+  margin: 1rem 0 0;
 }
 
 header {
   grid-column: 1/13;
   grid-row: 2/3;
+  margin: 1rem 0;
 }
 
 aside {
@@ -81,6 +82,7 @@ h2:nth-child(3) {
 
 h3 {
   margin: 0;
+  white-space: nowrap;
 }
 
 p {
