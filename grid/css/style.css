@@ -438,7 +438,10 @@ tbody > tr:nth-child(odd) {
   header {
     margin: 0;
   }
-
+  h1 {
+    margin-bottom: 0;
+    margin-left: 0;
+  }
   .ervaring {
     grid-template-columns: 20% 50% 30%;
     align-items: center;

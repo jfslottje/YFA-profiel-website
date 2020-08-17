@@ -186,6 +186,9 @@ tbody > tr:nth-child(odd) {
   nav {
     margin: 0 -1rem;
   }
+  .negative-lg-lm {
+    margin-left: -1rem !important;
+  }
 }
 
 @media print {

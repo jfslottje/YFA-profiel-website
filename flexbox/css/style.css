@@ -407,6 +407,10 @@ tbody > tr:nth-child(odd) {
   header {
     margin: 0 0 1rem !important;
   }
+
+  h1 {
+    margin-left: 0;
+  }
 }
 
 /** desktop groot scherm **/
