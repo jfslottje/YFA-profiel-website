@@ -373,6 +373,11 @@ tbody > tr:nth-child(odd) {
   table {
     font-size: 1rem;
   }
+
+  section,
+  header {
+    margin: 0 1rem 1rem;
+  }
 }
 
 /** desktop klein scherm **/

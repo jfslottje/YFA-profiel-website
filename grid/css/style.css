@@ -353,6 +353,11 @@ tbody > tr:nth-child(odd) {
     grid-column: 1/13;
   }
 
+  section,
+  header {
+    margin: 0 1rem 1rem;
+  }
+
   a.menu-knop {
     padding: 1rem;
     background-color: var(--sectie-achtergrond);
@@ -370,7 +375,9 @@ tbody > tr:nth-child(odd) {
     gap: 1rem;
     justify-items: left;
   }
-
+  section > .kolom-2 {
+    grid-template-columns: 45% 55%;
+  }
   [alt="avatar"] {
     display: grid;
   }
