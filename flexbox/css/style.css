@@ -75,6 +75,10 @@ img[aria-hidden="true"] {
   margin-right: 5%;
 }
 
+header {
+  margin-bottom: 0 !important;
+}
+
 /** links **/
 a {
   color: var(--tekst);
@@ -375,7 +379,8 @@ tbody > tr:nth-child(odd) {
   }
 
   section,
-  header {
+  header,
+  h1 {
     margin: 0 1rem 1rem;
   }
 }
@@ -400,7 +405,7 @@ tbody > tr:nth-child(odd) {
 
   section,
   header {
-    margin: 0 0 1rem;
+    margin: 0 0 1rem !important;
   }
 }
 

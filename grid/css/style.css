@@ -354,7 +354,8 @@ tbody > tr:nth-child(odd) {
   }
 
   section,
-  header {
+  header,
+  h1 {
     margin: 0 1rem 1rem;
   }
 
