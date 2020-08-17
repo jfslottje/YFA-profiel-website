@@ -429,12 +429,21 @@ tbody > tr:nth-child(odd) {
   nav {
     padding: 0;
   }
+
+  section {
+    margin: 0 0 1rem;
+  }
+
+  header {
+    margin: 0;
+  }
+
   .ervaring {
     grid-template-columns: 20% 50% 30%;
     align-items: center;
   }
 
-  [aria-label="Persoonlijke gegevens"] > .kolom-2 {
+  section > .kolom-2 {
     grid-template-columns: 100%;
     gap: 0;
   }

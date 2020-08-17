@@ -397,6 +397,11 @@ tbody > tr:nth-child(odd) {
   [aria-label="Persoonlijke informatie"] > .flex-rij {
     flex-direction: column;
   }
+
+  section,
+  header {
+    margin: 0 0 1rem;
+  }
 }
 
 /** desktop groot scherm **/
