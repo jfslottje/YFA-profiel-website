@@ -65,7 +65,7 @@ desktop (xl)
  - -[x]grid
  
  desktop (lg)
- - -[]bootstrap
+ - -[x]bootstrap
  - -[x]flexbox
  - -[x]grid
  
@@ -83,4 +83,4 @@ desktop (xl)
 
 - -[x] github
 - -[ ] netifly pushen
-- -[ ] inleveren: 8 juni
+- -[x] inleveren: 17 augustus
