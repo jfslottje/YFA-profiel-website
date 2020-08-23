@@ -268,12 +268,22 @@ a:hover > h3 {
 .kolom-2 > a:active > p {
   margin: 0.45rem 0.1rem;
 }
-
+/* 
 .kolom-5 > a:hover,
 .kolom-5 > a:active {
   background-color: var(--sectie-achtergrond);
+} */
+
+.kolom-5 > a,
+.kolom-7 > a,
+.kolom-5 > .kolom-2 > a {
+  background-color: var(--sectie-achtergrond);
 }
 
+.kolom-7 > a > img:hover,
+.kolom-7 > a > img:active {
+  filter: invert(0.4);
+}
 /** menu **/
 nav {
   display: grid;
@@ -475,6 +485,14 @@ tbody > tr:nth-child(odd) {
   header {
     margin: 0;
   }
+
+  section > .kolom-2 {
+    grid-template-columns: 50% 50%;
+  }
+
+  [aria-label="Persoonlijke gegevens"] > .kolom-2 {
+    grid-template-columns: 100%;
+  }
 }
 
 @media screen and (min-width: 1700px) {
@@ -482,19 +500,19 @@ tbody > tr:nth-child(odd) {
     grid-template-columns: repeat(24, 1fr);
   }
   header {
-    grid-column: 6/20;
+    grid-column: 5/21;
     grid-row: 2/3;
   }
 
   aside {
-    grid-column: 6/11;
+    grid-column: 5/11;
   }
 
   main {
-    grid-column: 11/20;
+    grid-column: 11/21;
   }
   h1 {
-    grid-column: 6/20;
+    grid-column: 5/21;
     grid-row: 1/2;
   }
   footer {

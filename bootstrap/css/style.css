@@ -120,6 +120,10 @@ span {
   background-color: var(--sectie-achtergrond);
 }
 
+.row.justify-content-start > .col-2:hover {
+  background-color: var(--link-achtergrond);
+}
+
 /** menu **/
 
 img[aria-hidden="true"] {

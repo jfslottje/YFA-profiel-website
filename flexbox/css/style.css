@@ -236,7 +236,7 @@ a > p {
   width: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 .ervaring > p {
   margin: 0;
