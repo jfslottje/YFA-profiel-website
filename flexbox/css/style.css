@@ -444,18 +444,25 @@ tbody > tr:nth-child(odd) {
   section,
   main,
   aside,
+  nav,
   * {
     margin: 0;
     padding: 0;
     min-width: 0;
   }
 
-  body {
+  body,
+  header {
     visibility: hidden;
     overflow: visible !important;
   }
-
-  .print {
+  nav,
+  [aria-label="Social en contact informatie"],
+  [aria-label="Curriculum-Vitae"] {
+    display: none;
+  }
+  .print,
+  h1 {
     visibility: visible;
     height: auto !important;
   }
@@ -468,6 +475,14 @@ tbody > tr:nth-child(odd) {
     color: var(--sectie-achtergrond);
   }
 
+  .ervaring:not(:first-child) {
+    margin-top: 1rem;
+  }
+  .ervaring-inhoud > p:last-child,
+  .ervaring-inhoud > p:first-child {
+    margin-top: 1rem;
+  }
+
   .flex-rij > span {
     color: var(--tekst);
   }
@@ -476,37 +491,47 @@ tbody > tr:nth-child(odd) {
     width: 100%;
   }
 
-  .flex-rij {
-    flex-direction: column;
-  }
-
   ul {
     margin-left: 3rem;
   }
 
   h2 {
     margin-bottom: 1rem;
-    margin-top: 0;
+    margin-top: 1rem;
   }
 
   [aria-label="Werkervaring"] {
     margin-top: 2rem;
   }
 
+  [alt="avatar"] {
+    margin-left: 11rem !important;
+    max-width: 370px;
+  }
+
   [aria-label="Persoonlijke informatie"] > :last-child {
     margin-top: 1rem;
   }
 
-  [aria-label="Persoonlijke gegevens"] > img {
-    max-width: 370px;
-    margin-left: 1rem;
+  .ervaring > h3 {
+    margin-left: 2rem;
+  }
+  .ervaring > .flex-rij {
+    margin-left: auto;
   }
   br,
   header,
   [aria-label="Curriculum-Vitae"],
   [aria-label="Social en contact informatie"],
-  [aria-label="Persoonlijke gegevens"] > .flex-rij {
+  [aria-label="Persoonlijke gegevens"] > .flex-rij,
+  .flex-split,
+  .ervaring {
     flex-direction: row;
+  }
+
+  [aria-label="Technische skills"] > h2,
+  [aria-label="Talen"] > h2 {
+    padding-left: 0rem;
   }
   /* verwijder overbodige informatie (h2, naam en woonplaats) op de eerste pagina*/
   [aria-label="Persoonlijke informatie"] > h2,

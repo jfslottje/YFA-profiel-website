@@ -223,7 +223,12 @@ tbody > tr:nth-child(odd) {
     padding: 0 !important;
   }
 
-  .col-print {
+  .col-print-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .col-print-12 {
     flex: 0 0 100%;
     max-width: 100%;
   }
