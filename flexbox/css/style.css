@@ -89,7 +89,7 @@ a:active,
 a:focus,
 a:hover,
 a:hover > h3 {
-  background-color: var(--yfa-blauw);
+  background-color: var(--sectie-achtergrond);
   color: var(--link-achtergrond);
 }
 [aria-hidden="true"] ~ p {
@@ -101,9 +101,18 @@ a:hover > h3 {
   filter: invert(0.4);
 }
 
-.social > a:hover,
-.social > a:active {
-  background-color: var(--sectie-achtergrond);
+a > h3:hover,
+a > h3:active,
+a > h3:focus,
+a > h3:visited {
+  background-color: var(--yfa-blauw);
+}
+
+[aria-label="Social en contact informatie"] > a:visited,
+[aria-label="Social en contact informatie"] > a:active,
+[aria-label="Social en contact informatie"] > a:focus,
+[aria-label="Social en contact informatie"] > a:hover {
+  color: var(--tekst);
 }
 
 /** Curriculum-Vitae **/

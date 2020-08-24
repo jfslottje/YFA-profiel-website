@@ -253,9 +253,11 @@ a {
 
 a:active,
 a:focus,
+a:focus-within,
+a:visited,
 a:hover,
 a:hover > h3 {
-  background-color: var(--yfa-blauw);
+  background-color: var(--sectie-achtergrond);
   color: var(--link-achtergrond);
 }
 
@@ -268,11 +270,6 @@ a:hover > h3 {
 .kolom-2 > a:active > p {
   margin: 0.45rem 0.1rem;
 }
-/* 
-.kolom-5 > a:hover,
-.kolom-5 > a:active {
-  background-color: var(--sectie-achtergrond);
-} */
 
 .kolom-5 > a,
 .kolom-7 > a,
@@ -283,6 +280,20 @@ a:hover > h3 {
 .kolom-7 > a > img:hover,
 .kolom-7 > a > img:active {
   filter: invert(0.4);
+}
+
+a > h3:hover,
+a > h3:active,
+a > h3:focus,
+a > h3:visited {
+  background-color: var(--yfa-blauw);
+}
+
+[aria-label="Social en contact informatie"] > a:visited,
+[aria-label="Social en contact informatie"] > a:active,
+[aria-label="Social en contact informatie"] > a:focus,
+[aria-label="Social en contact informatie"] > a:hover {
+  color: var(--tekst);
 }
 /** menu **/
 nav {
