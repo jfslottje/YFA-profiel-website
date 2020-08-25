@@ -134,6 +134,13 @@ a > h3:visited {
 [aria-label="Social en contact informatie"] > a:hover {
   color: var(--tekst);
 }
+p > a {
+  color: var(--yfa-blauw);
+}
+
+p > a:visited {
+  color: var(--footer-tekst);
+}
 /** menu **/
 
 img[aria-hidden="true"] {

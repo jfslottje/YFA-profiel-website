@@ -115,6 +115,13 @@ a > h3:visited {
   color: var(--tekst);
 }
 
+p > a {
+  color: var(--yfa-blauw);
+}
+
+p > a:visited {
+  color: var(--footer-tekst);
+}
 /** Curriculum-Vitae **/
 .flex-rij > a:hover {
   background-color: var(--link-achtergrond);
